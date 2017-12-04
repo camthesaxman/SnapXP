@@ -1,0 +1,15 @@
+#include <windows.h>
+
+#include "resources.h"
+
+ID_RES_APPICON ICON "appicon.ico"
+
+ID_RES_DLG_ABOUT DIALOG 0, 0, 150, 70
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Snap XP"
+FONT 8, "MS Sans Serif"
+{
+	CTEXT "Snap XP v0.1", 0, 0, 10, 150, 20
+	CTEXT "Copyright (C) 2017 - Cameron Hal", 0, 0, 30, 150, 20
+	DEFPUSHBUTTON "&OK", IDOK, 50, 50, 50, 14
+}
